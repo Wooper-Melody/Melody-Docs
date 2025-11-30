@@ -1,11 +1,12 @@
 ---
-title: Welcome to Quartz
+title: Melody
 ---
+"Discover more. Listen better."
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+Welcome to the official documentation of Melody App
+ 
 
 
-# hola
+
 
 
