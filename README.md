@@ -62,10 +62,6 @@ After building, the generated site will be available in the `public/` output fol
 - Main content: `content/` — Markdown pages (.md) are the source of truth.
 - Static assets (images, icons): `quartz/static/` — these are copied into the site during the build.
 
-### Favicon
-
-The site favicon is produced from `quartz/static/icon.png`. To change the favicon, replace that file with a square PNG (recommended 256×256 or 512×512), then rebuild — the Quartz Favicon emitter will generate `public/favicon.ico` automatically.
-
 ## Contributing
 
 1. Edit or add Markdown files under `content/`.
