@@ -1,9 +1,17 @@
 ---
 title: Melody
 ---
-"Discover more. Listen better."
+Descubrí más. Escuchá mejor.
 
-Welcome to the official documentation of Melody App
+Bienvenido a la documentacion oficial de Melody. 
+
+Melody es una plataforma de streaming musical diseñada para simplificar el descubrimiento y la escucha de música. Permite a los oyentes explorar canciones, álbumes y playlists personalizadas, mientras que los artistas pueden gestionar su perfil, publicar lanzamientos y conectar con su audiencia. Con funciones de reproducción avanzada, gestion de colas de reproduccion y herramientas de administración de contenido, Melody ofrece una experiencia musical fluida e intuitiva tanto para escuchar como para crear.
+
+
+
+
+
+
  
 
 
