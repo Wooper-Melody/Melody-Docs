@@ -2,3 +2,31 @@
 @use "./themes";
 
 // put your custom CSS here!
+
+// Estilos personalizados para blockquotes - mini comentario discreto
+blockquote {
+  border-left: 2px solid var(--lightgray) !important;
+  padding-left: 0.75rem !important;
+  padding-right: 0.5rem !important;
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
+  margin: 0.75rem 0 !important;
+  background-color: transparent !important;
+  font-size: 0.9em !important;
+  color: var(--darkgray) !important;
+  font-style: normal !important;
+  opacity: 0.85;
+  
+  p {
+    margin: 0.25rem 0;
+    color: var(--darkgray) !important;
+    
+    &:first-child {
+      margin-top: 0;
+    }
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
