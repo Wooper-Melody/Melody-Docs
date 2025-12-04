@@ -6,7 +6,7 @@ Cada servicio tiene su propia documentación en los siguientes enlaces:
 
 - [[Servicio de notificaciones]]
 - [[Servicio de usuarios]]
-- [[Catalogo/summary|Servicio de catálogo]]
+- [[Servicios/Catalogo/summary|Servicio de catálogo]]
 
 ## Arquitectura
 

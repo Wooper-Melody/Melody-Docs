@@ -2,8 +2,6 @@
 title: Servicio de usuarios
 ---
 
-> [[index|← Volver al inicio]]
-
 # Vista general
 
 El servicio de usuarios es el microservicio encargado de la gestión de usuarios, autenticación y autorización, como también del sistema de follow/unfollow entre usuarios. Este servicio maneja el ciclo de vida completo de los usuarios, ya sean del tipo `artists` o `listeners`, desde el registro hasta la gestión de perfiles. Sus responsabilidades principales son:
