@@ -1,8 +1,12 @@
+---
+title: Servicio de usuarios
+---
+
 > [[index|← Volver al inicio]]
 
 # Vista general
 
-El servicio de usuarios es el microservicio encargado de la gestión de usuarios, autenticación y autorización, como tambien del sistema de follow/unfollow entre usuarios. Este servicio maneja el ciclo de vida completo de los usuarios, ya sean del tipo `artists` o `listeners`, desde el registro hasta la gestión de perfiles. Sus responsabilidades principales son:
+El servicio de usuarios es el microservicio encargado de la gestión de usuarios, autenticación y autorización, como también del sistema de follow/unfollow entre usuarios. Este servicio maneja el ciclo de vida completo de los usuarios, ya sean del tipo `artists` o `listeners`, desde el registro hasta la gestión de perfiles. Sus responsabilidades principales son:
 
 - Gestión de usuarios y perfiles (artistas y oyentes).
 - Autenticación y autorización mediante JWT.
@@ -15,7 +19,7 @@ El servicio de usuarios es el microservicio encargado de la gestión de usuarios
 El servicio de usuarios implementa una [[Arquitectura|arquitectura]] de capas tradicional con Spring Boot, donde la autenticación se maneja mediante JWT con criptografía asimétrica (RSA). El sistema utiliza `access tokens` y `refresh tokens` para la autenticación de usuarios.
 
 
-![Arquitectura del Notification Service](Servicios/assets/user-service-arq.png)
+![Arquitectura del User Service](Servicios/assets/user-service-arq.png)
 
 
 ## Tecnologías
@@ -85,7 +89,7 @@ El sistema de recuperación de contraseña implementa:
 ### Elección de PostgreSQL
 
 > [!NOTE]
-> PostgreSQL fue seleccionado como base de datos principal y unica para este microservicio.
+> PostgreSQL fue seleccionado como base de datos principal y única para este microservicio.
 
 **Justificación**: PostgreSQL es ideal para el servicio de usuarios debido a:
 
@@ -94,7 +98,7 @@ El sistema de recuperación de contraseña implementa:
 *   **Consultas Complejas**: El sistema de follow/unfollow y las consultas de perfiles requieren JOINs eficientes y consultas relacionales complejas.
 *   **Integración con Supabase**: Supabase proporciona una capa adicional de servicios sobre PostgreSQL, facilitando el desarrollo y despliegue.
 
-Dado estas propiedades que provee PostgreSQL, y que al momento de diseñar el sistema inicial fue notoriamente viable usar una base de datos relacional, optamos por esta tecnologia. 
+Dadas estas propiedades que provee PostgreSQL, y que al momento de diseñar el sistema inicial fue notoriamente viable usar una base de datos relacional, optamos por esta tecnología. 
 
 La persistencia de datos se maneja a través de PostgreSQL, integrándose con Supabase para aprovechar sus capacidades de gestión, seguridad y APIs automáticas.
 

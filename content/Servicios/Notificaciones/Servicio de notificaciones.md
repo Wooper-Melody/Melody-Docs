@@ -1,3 +1,7 @@
+---
+title: Servicio de notificaciones
+---
+
 > [[index|← Volver al inicio]]
 
 El servicio de notificaciones es el componente responsable de recibir eventos (webhooks o mensajes internos), transformarlos en notificaciones persistentes, exponer APIs para consulta y preferencias, y enviar notificaciones push a los usuarios mediante OneSignal. Sus responsabilidades principales son:
