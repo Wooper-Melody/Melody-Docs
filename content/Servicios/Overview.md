@@ -49,8 +49,8 @@ Cada servicio tiene la responsabilidad de gestionar su propia base de datos. Est
 Esta decisión arquitectónica fue tomada por las siguientes razones:
 
 1. **Independencia y autonomía**: Cada servicio es completamente independiente en términos de datos. Puede elegir la base de datos más adecuada para su caso de uso específico:
-   - El [[Servicio de usuarios]] y catálogo utilizan **PostgreSQL** para datos relacionales estructurados
-   - El servicio de catálogo también utiliza **MongoDB** para métricas que requieren flexibilidad en el esquema
+   - El [[Servicio de usuarios]] y [catálogo](Servicios/Catalogo/summary.md) utilizan **PostgreSQL** para datos relacionales estructurados
+   - El [servicio de catálogo](Servicios/Catalogo/summary.md) también utiliza **MongoDB** para métricas que requieren flexibilidad en el esquema
    - El [[Servicio de notificaciones]] utiliza **MongoDB** para almacenar notificaciones con estructuras variables
 
 2. **Escalabilidad independiente**: Cada base de datos puede escalarse de forma independiente según la demanda de su servicio. No hay riesgo de que un servicio con alta carga afecte el rendimiento de otros servicios.
@@ -86,7 +86,7 @@ La mayoría de las comunicaciones entre servicios se realizan mediante **APIs RE
 - **Inmediatez**: Cuando un servicio necesita datos de otro, obtiene una respuesta inmediata
 - **Compatibilidad**: Funciona bien con HTTP/HTTPS estándar y es compatible con cualquier lenguaje de programación
 
-**Ejemplo de uso**: Cuando el servicio de catálogo necesita información de un usuario si sigue a otro, realiza una llamada REST síncrona al [[Servicio de usuarios]] para el home.
+**Ejemplo de uso**: Cuando el [servicio de catálogo](Servicios/Catalogo/summary.md) necesita información de un usuario si sigue a otro, realiza una llamada REST síncrona al [[Servicio de usuarios]] para el home.
 
 ### Webhooks (Comunicación Asíncrona)
 
@@ -107,7 +107,7 @@ Para ciertos casos de uso, especialmente eventos que no requieren una respuesta 
 
 ### Java Spring Boot
 
-Tanto el [[Servicio de usuarios]] como el servicio de catálogo son desarrollados en **Java con Spring Boot**. Estos dos fueron los primeros servicios desarrollados y se eligió esta combinación de tecnologías por las siguientes razones:
+Tanto el [[Servicio de usuarios]] como el [servicio de catálogo](Servicios/Catalogo/summary.md#tecnologías-utilizadas) son desarrollados en **Java con Spring Boot**. Estos dos fueron los primeros servicios desarrollados y se eligió esta combinación de tecnologías por las siguientes razones:
 
 1. **Facilidad de desarrollo**: Spring Boot está específicamente diseñado para resolver rápidamente problemas comunes en el desarrollo de aplicaciones empresariales. Muchas funcionalidades están disponibles como "plug and play", lo que acelera significativamente el desarrollo. Nos ayudo muchisimo para empezar a tener la Api rest funcionando rapidamente.
 

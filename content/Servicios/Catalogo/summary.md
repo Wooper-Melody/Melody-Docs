@@ -15,9 +15,9 @@ El servicio de catálogo es el componente responsable de gestionar el catálogo 
 
 En el siguiente diagrama se puede observar a grandes rasgos la arquitectura del servicio de catálogo:
 
-![Arquitectura del Catalog Service](../assets/catalog-service-arq.png)
+![Arquitectura del Catalog Service](Servicios/assets/catalog-service-arq.png)
 
-> Link al diagrama para mayor claridad: [Arquitectura del Catalog Service](../assets/catalog-service-arq.png)
+> Link al diagrama para mayor claridad: [Arquitectura del Catalog Service](Servicios/assets/catalog-service-arq.png)
 
 Se puede observar cómo el servicio de catálogo se comunica con el `User Service` para obtener información de los usuarios en algunos casos, como en el `Collection Service`, mediante HTTP requests. También utiliza webhooks para enviar notificaciones de eventos como la creación de una playlist o una nueva publicación de un artista.
 
@@ -40,7 +40,19 @@ El servicio de catálogo utiliza dos bases de datos diferentes, cada una optimiz
 - **PostgreSQL**: Base de datos principal del servicio de catálogo - almacena toda la información estructurada y relacional (colecciones, canciones, playlists, likes, guardados)
 - **MongoDB**: Base de datos de métricas - almacena eventos de reproducción y métricas agregadas
 
-Para más detalles sobre el diseño y las razones de esta elección, ver la sección de [Bases de Datos en Overview](../Overview.md#bases-de-datos).
+Para más detalles sobre el diseño y las razones de esta elección, ver la sección de [Bases de Datos en Overview](Servicios/Overview.md#bases-de-datos).
+
+## Tecnologías Utilizadas
+
+- **Java**: Lenguaje de programación principal para el servicio de catálogo.
+- **Spring Boot**: Framework para el desarrollo de aplicaciones Java. Utilizado para la creación de la API REST y el manejo de la autenticación y autorización. 
+- **PostgreSQL**: Base de datos relacional para el servicio de catálogo.
+- **MongoDB**: Base de datos NoSQL para las métricas del servicio de catálogo.
+- **JPA y Hibernate**: ORM para la persistencia de datos en PostgreSQL.
+- **Spring Data MongoDB**: ORM para la persistencia de datos en MongoDB.
+
+Para ver la explicación de por que java y spring boot fueron las tecnologías elegidas, ver la sección de [Lenguajes Utilizados en Overview](Servicios/Overview.md#lenguajes-utilizados).
+
 
 ## Comunicación entre Servicios
 
