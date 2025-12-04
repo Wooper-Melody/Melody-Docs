@@ -77,7 +77,6 @@ Todas las métricas soportan filtrado por fechas, región, y exportación a CSV/
 
 - Usuarios no autenticados → redirigidos a `/login`
 - Usuarios sin rol ADMIN → rechazados con error
-- Prevención de auto-modificación (un admin no puede bloquearse o eliminarse a sí mismo)
 
 ## Deployment
 

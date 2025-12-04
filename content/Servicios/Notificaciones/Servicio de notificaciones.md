@@ -16,7 +16,7 @@ El servicio de notificaciones es el microservicio encargado de recibir eventos d
 
 El servicio de notificaciones implementa una [[Arquitectura|arquitectura]] basada en el patrón Webhook, donde expone un endpoint POST que recibe eventos de los [[Servicio de usuarios|servicios de usuario]] y catálogo. Estos servicios funcionan como `producers` y el servicio de notificaciones como `consumer`, procesando eventos de manera asíncrona.
 
-![Arquitectura del Notification Service](../assets/notification-service-arq.png)
+![Arquitectura del Notification Service](Servicios/assets/notification-service-arq.png)
 
 El flujo principal es el siguiente:
 
