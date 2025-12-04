@@ -17,14 +17,17 @@ Melody es una plataforma de streaming musical diseñada para simplificar el desc
 ### Microservicios
 - [[Servicio de usuarios|Servicio de Usuarios]]
 - [[Servicio de notificaciones|Servicio de Notificaciones]]
+- Servicio de Catálogo
+  - [[summary|Vista General del Catálogo]]
+  - [[Collections Playlists|Collections y Playlists]]
+  - [[Canciones|Gestión de Canciones]]
+  - [[Metricas|Sistema de Métricas]]
+  - [[Reproducciones|Reproducciones]]
 
+### Frontend
+- [[Mobile|Aplicación Mobile]]
+- [[Backoffice|Backoffice Web]]
 
-
-
-
- 
-
-
-
-
-
+### Gestión del Proyecto
+- [[organización y distribución|Organización y Distribución del Equipo]]
+- [[sprints y checkpoints|Sprints y Checkpoints]]
