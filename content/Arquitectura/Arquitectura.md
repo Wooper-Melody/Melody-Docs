@@ -1,3 +1,5 @@
+> [[index|← Volver al inicio]]
+
 La arquitectura del proyecto está basada en microservicios, donde cada servicio es independiente y tiene su propia base de datos. Esta separación permite escalar, mantener y desarrollar cada componente de manera independiente.
 
 ![Arquitectura general](Arquitectura/assets/arquitectura-general.png)
