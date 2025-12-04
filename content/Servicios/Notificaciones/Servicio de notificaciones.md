@@ -6,10 +6,10 @@ El servicio de notificaciones es el componente responsable de recibir eventos (w
 
 ## Arquitectura
 
-El servicio de notificaciones emplea un sistema de tipo Webhook, el cual consiste en exponer un endpoint POST a los servicios de usuario y catalogo. Estos servicios funcionan como `producers` y el servicio de notificacion como `consumer`, ante eventos que puedan ocurrir. Estos eventos pueden ser:
+El servicio de notificaciones emplea un sistema de tipo Webhook, el cual consiste en exponer un endpoint POST a los [[Servicio de usuarios|servicios de usuario]] y catalogo. Estos servicios funcionan como `producers` y el servicio de notificacion como `consumer`, ante eventos que puedan ocurrir. Estos eventos pueden ser:
 
 - Creacion de una playlist.
 - Creacion de una collection.
-- Nuevo seguidor.
+- [[Servicio de usuarios#Sistema de Follow/Unfollow|Nuevo seguidor]].
 
 ![Arquitectura del Notification Service](Servicios/assets/notification-service-arq.png)

@@ -12,9 +12,9 @@ En el diagrama se puede observar la arquitectura general del proyecto. Se pueden
 
 El sistema está compuesto por tres microservicios principales:
 
-- <u>**Usuarios**</u>: Gestiona la autenticación y perfiles de los usuarios. Implementado en Java con Spring Boot, utiliza PostgreSQL como base de datos.
+- <u>**[[Servicio de usuarios|Usuarios]]**</u>: Gestiona la autenticación y perfiles de los usuarios. Implementado en Java con Spring Boot, utiliza PostgreSQL como base de datos.
 - <u>**Catalogo**</u>: Gestiona el catálogo de contenido incluyendo las métricas del mismo. Implementado en Java con Spring Boot, utiliza PostgreSQL para el catálogo y MongoDB para las métricas.
-- <u>**Notificaciones**</u>: Gestiona las notificaciones de los usuarios desarollado en Python con FastAPI. Utiliza MongoDB como base de datos.
+- <u>**[[Servicio de notificaciones|Notificaciones]]**</u>: Gestiona las notificaciones de los usuarios desarollado en Python con FastAPI. Utiliza MongoDB como base de datos.
 
 Cada microservicio tiene sus propias bases de datos y APIs. De esta manera cada uno tiene la responsabilidad de gestionar su propio contenido y funcionalidad. 
 
@@ -45,14 +45,14 @@ Los microservicios se comunican entre sí mediante:
 
 - **APIs REST**: Para comunicación síncrona entre servicios. Por ejemplo, cuando el servicio de catálogo necesita información de usuario, realiza una petición REST al servicio de usuarios.
 - **Webhooks**: Para eventos asíncronos. Los servicios actúan como `producers` enviando eventos a otros servicios que funcionan como `consumers`. Por ejemplo:
-  - El servicio de usuarios y catálogo envían eventos al servicio de notificaciones cuando ocurren acciones relevantes (creación de playlist, nuevo seguidor, etc.)
-  - El servicio de notificaciones recibe estos eventos y los procesa para generar y enviar notificaciones
+  - El [[Servicio de usuarios|servicio de usuarios]] y catálogo envían eventos al [[Servicio de notificaciones|servicio de notificaciones]] cuando ocurren acciones relevantes (creación de playlist, [[Servicio de usuarios#Sistema de Follow/Unfollow|nuevo seguidor]], etc.)
+  - El [[Servicio de notificaciones|servicio de notificaciones]] recibe estos eventos y los procesa para generar y enviar notificaciones
 
 ### Integraciones Externas
 
 Los microservicios pueden integrarse con servicios externos según sus necesidades específicas. Por ejemplo:
-- El servicio de notificaciones utiliza **OneSignal** para el envío de notificaciones push
-- El servicio de usuarios utiliza **Mailjet** para el envío de correos electrónicos
-- El servicio de usuarios también utiliza autenticación con Google para usuarios que deseen iniciar sesión con su cuenta de Google.
+- El [[Servicio de notificaciones|servicio de notificaciones]] utiliza **OneSignal** para el envío de notificaciones push
+- El [[Servicio de usuarios#Recuperación de Contraseña|servicio de usuarios]] utiliza **Mailjet** para el envío de correos electrónicos
+- El [[Servicio de usuarios#Autenticación con Google|servicio de usuarios]] también utiliza autenticación con Google para usuarios que deseen iniciar sesión con su cuenta de Google.
 
 Los detalles de estas integraciones se documentan en la sección específica de cada servicio.
