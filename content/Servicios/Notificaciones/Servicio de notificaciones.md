@@ -14,4 +14,4 @@ El servicio de notificaciones emplea un sistema de tipo Webhook, el cual consist
 - Creacion de una collection.
 - [[Servicio de usuarios#Sistema de Follow/Unfollow|Nuevo seguidor]].
 
-![Arquitectura del Notification Service](Servicios/assets/notification-service-arq.png)
+![Arquitectura del Notification Service](../assets/notification-service-arq.png)
