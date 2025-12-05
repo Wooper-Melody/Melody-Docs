@@ -71,7 +71,7 @@ Esta separación de bases de datos tiene algunas implicaciones importantes:
 
 - **Diseño cuidadoso de límites**: Es crucial diseñar bien los límites de cada servicio y qué datos pertenecen a cada uno para minimizar las llamadas entre servicios y mantener un buen rendimiento.
 
-- **Gestión de datos duplicados**: En algunos casos puede ser necesario duplicar ciertos datos entre servicios para mejorar el rendimiento, lo que requiere estrategias de sincronización. Un buen ejemplo de esto es en metricas o con datos de los usuarios en el catalogo. 
+- **Gestión de datos duplicados**: En algunos casos puede ser necesario duplicar ciertos datos entre servicios para mejorar el rendimiento, lo que requiere estrategias de sincronización. Un buen ejemplo de esto es en métricas o con datos de los usuarios en el catálogo. 
 
 ## Comunicación entre Servicios
 
@@ -109,7 +109,7 @@ Para ciertos casos de uso, especialmente eventos que no requieren una respuesta 
 
 Tanto el [[Servicio de usuarios]] como el [servicio de catálogo](Servicios/Catalogo/summary.md#tecnologías-utilizadas) son desarrollados en **Java con Spring Boot**. Estos dos fueron los primeros servicios desarrollados y se eligió esta combinación de tecnologías por las siguientes razones:
 
-1. **Facilidad de desarrollo**: Spring Boot está específicamente diseñado para resolver rápidamente problemas comunes en el desarrollo de aplicaciones empresariales. Muchas funcionalidades están disponibles como "plug and play", lo que acelera significativamente el desarrollo. Nos ayudo muchisimo para empezar a tener la Api rest funcionando rapidamente.
+1. **Facilidad de desarrollo**: Spring Boot está específicamente diseñado para resolver rápidamente problemas comunes en el desarrollo de aplicaciones empresariales. Muchas funcionalidades están disponibles como "plug and play", lo que acelera significativamente el desarrollo. Nos ayudó muchísimo para empezar a tener la API REST funcionando rápidamente.
 
 2. **Middlewares integrados**: Spring Boot proporciona una amplia gama de middlewares pre-configurados que se pueden activar fácilmente. Esto incluye manejo de CORS, logging, validación, manejo de excepciones, y más, sin necesidad de configuraciones complejas.
 

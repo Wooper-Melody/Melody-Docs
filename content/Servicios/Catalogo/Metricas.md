@@ -176,7 +176,7 @@ Todas las consultas soportan filtrado opcional por región:
 
 El servicio de métricas está integrado dentro del servicio de catálogo porque:
 
-- Tiene acceso directo a las entidades del catálogo (canciones, colecciones, playlists), ahorrándose llamadas entre servicios y simplificando la comunicación entre componentes, incluyendo el desarrollo. 
+- Tiene acceso directo a las entidades del catálogo (canciones, colecciones, playlists), ahorrándose llamadas entre servicios y simplificando la comunicación entre componentes, lo que facilita el desarrollo. 
 
 ### ¿Por qué podría ser un servicio separado?
 

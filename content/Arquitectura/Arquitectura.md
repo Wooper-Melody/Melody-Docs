@@ -15,7 +15,7 @@ El sistema está compuesto por tres microservicios principales:
 
 - <u>**[[Servicio de usuarios|Usuarios]]**</u>: Gestiona la autenticación y perfiles de los usuarios. Implementado en Java con Spring Boot, utiliza PostgreSQL como base de datos.
 - <u>**Catalogo**</u>: Gestiona el catálogo de contenido incluyendo las métricas del mismo. Implementado en Java con Spring Boot, utiliza PostgreSQL para el catálogo y MongoDB para las métricas.
-- <u>**[[Servicio de notificaciones|Notificaciones]]**</u>: Gestiona las notificaciones de los usuarios desarollado en Python con FastAPI. Utiliza MongoDB como base de datos.
+- <u>**[[Servicio de notificaciones|Notificaciones]]**</u>: Gestiona las notificaciones de los usuarios desarrollado en Python con FastAPI. Utiliza MongoDB como base de datos.
 
 Cada microservicio tiene sus propias bases de datos y APIs. De esta manera cada uno tiene la responsabilidad de gestionar su propio contenido y funcionalidad. 
 
@@ -44,7 +44,7 @@ El frontend (tanto la aplicación mobile como el backoffice web) se comunica exc
 
 Los microservicios se comunican entre sí mediante:
 
-- **APIs REST**: Para comunicación síncrona entre servicios. Por ejemplo, cuando el servicio de catálogo necesita información de usuario, realiza una petición REST al servicio de usuarios.
+- **APIs REST**: Para comunicación síncrona entre servicios. Por ejemplo, cuando el [servicio de catálogo](Servicios/Catalogo/summary.md) necesita información de usuario, realiza una petición REST al [[Servicio de usuarios]].
 - **Webhooks**: Para eventos asíncronos. Los servicios actúan como `producers` enviando eventos a otros servicios que funcionan como `consumers`. Por ejemplo:
   - El [[Servicio de usuarios|servicio de usuarios]] y catálogo envían eventos al [[Servicio de notificaciones|servicio de notificaciones]] cuando ocurren acciones relevantes (creación de playlist, [[Servicio de usuarios#Sistema de Follow/Unfollow|nuevo seguidor]], etc.)
   - El [[Servicio de notificaciones|servicio de notificaciones]] recibe estos eventos y los procesa para generar y enviar notificaciones

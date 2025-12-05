@@ -1,4 +1,4 @@
-Esta sección detalla dónde están desplegados y hosteados todos los componentes del sistema.
+Esta sección detalla dónde están desplegados y alojados todos los componentes del sistema.
 
 ## Microservicios
 
@@ -14,27 +14,31 @@ Se eligió Google Cloud Run como plataforma de despliegue por las siguientes raz
 - **Herramientas de monitoreo integradas**: Cloud Run proporciona herramientas de monitoreo y logging integradas, eliminando la necesidad de configurar soluciones adicionales como Grafana o New Relic
 - **Integración con GCP**: Se integra nativamente con otros servicios de Google Cloud, como Firebase Storage
 
+### Monitoreo y Logging
+
+Los servicios, al estar en Cloud Run, tienen un monitoreo y logging integrado con GCP. Esto nos permite tener un control total de los servicios y poder monitorear su rendimiento y estado sin necesidad de integrarnos con Grafana o New Relic. 
+
 ## Bases de Datos
 
 ### PostgreSQL
 
-Las bases de datos PostgreSQL están hosteadas en **Supabase**:
-- **Users database**: Base de datos del servicio de usuarios
-- **Catalog database**: Base de datos principal del servicio de catálogo
+Las bases de datos PostgreSQL están alojadas en **Supabase**:
+- **Users database**: Base de datos del [[Servicio de usuarios|servicio de usuarios]]
+- **Catalog database**: Base de datos principal del [servicio de catálogo](Servicios/Catalogo/summary.md)
 
 Supabase proporciona una plataforma gestionada para PostgreSQL con características adicionales como autenticación, almacenamiento y APIs REST automáticas.
 
 ### MongoDB
 
-Las bases de datos MongoDB están hosteadas en **MongoDB Atlas**:
-- **Metrics database**: Base de datos de métricas del servicio de catálogo
-- **Notifications database**: Base de datos del servicio de notificaciones
+Las bases de datos MongoDB están alojadas en **MongoDB Atlas**:
+- **Metrics database**: Base de datos de métricas del [servicio de catálogo](Servicios/Catalogo/summary.md)
+- **Notifications database**: Base de datos del [[Servicio de notificaciones|servicio de notificaciones]]
 
 MongoDB Atlas es la plataforma en la nube gestionada de MongoDB, que proporciona alta disponibilidad, escalado automático y herramientas de monitoreo.
 
 ## API Gateway
 
-El API Gateway está hosteado y gestionado por **Zuplo**. Zuplo es una plataforma _SaaS_ que proporciona:
+El API Gateway está alojado y gestionado por **Zuplo**. Zuplo es una plataforma _SaaS_ que proporciona:
 
 - Hosting del API Gateway
 - Gestión de autenticación y autorización
@@ -42,7 +46,7 @@ El API Gateway está hosteado y gestionado por **Zuplo**. Zuplo es una plataform
 - Políticas de rate limiting y seguridad
 - Plugins especializados para el manejo de autenticación y autorización
 
-> Mas detalles en su sección. 
+> Más detalles en su sección. 
 
 ## Frontend
 
@@ -59,7 +63,7 @@ La aplicación está disponible en: [https://melody-backoffice-web.vercel.app](h
 
 ### Aplicación Mobile
 
-La aplicación mobile no está hosteada, sino que se distribuye mediante **APK** (Android Package). Los usuarios descargan e instalan la aplicación directamente en sus dispositivos Android. La aplicación está desarrollada con **Expo** y actualmente solo está disponible para Android.
+La aplicación mobile no está alojada, sino que se distribuye mediante **APK** (Android Package). Los usuarios descargan e instalan la aplicación directamente en sus dispositivos Android. La aplicación está desarrollada con **Expo** y actualmente solo está disponible para Android.
 
 ## Almacenamiento
 

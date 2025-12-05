@@ -23,24 +23,24 @@ Tanto parte del backend como el frontend tienen acceso a este bucket pero el bac
 ## Microservicios
 
 Se tiene en total tres microservicios que se comunican entre si como se veia en el diagrama anterior:
-- <u>**Usuarios**</u>: Gestiona la autenticación y perfiles de los usuarios.
-- <u>**Catalogo**</u>: Gestiona el catálogo de contenido incluyendo las metricas del mismo. Esto incluye la gestión de playlists, colecciones, canciones, artists picks, etc. 
-- <u>**Notificaciones**</u>: Gestiona las notificaciones de los usuarios. 
+- <u>**[[Servicio de usuarios|Usuarios]]**</u>: Gestiona la autenticación y perfiles de los usuarios.
+- <u>**[Catalogo](Servicios/Catalogo/summary.md)**</u>: Gestiona el catálogo de contenido incluyendo las métricas del mismo. Esto incluye la gestión de playlists, colecciones, canciones, artists picks, etc. 
+- <u>**[[Servicio de notificaciones|Notificaciones]]**</u>: Gestiona las notificaciones de los usuarios. 
 
-Cada uno de estos microservicios tiene sus propias bases de datos y APIs. Todos se encuentran deployeados en **Google Cloud Run** .
+Cada uno de estos microservicios tiene sus propias bases de datos y APIs. Todos se encuentran desplegados en **Google Cloud Run**.
 
 
 ## API Gateway
 
-En vez de una implementación manual se decidio usar [**Zuplo**](https://www.zuplo.com/) para el API gateway. Este se encarga de la autenticación y autorización de las peticiones y de redirigirlas a los microservicios correspondientes.
+En vez de una implementación manual se decidió usar [**Zuplo**](https://www.zuplo.com/) para el API gateway. Este se encarga de la autenticación y autorización de las peticiones y de redirigirlas a los microservicios correspondientes.
 
 ## Aplicación Mobile
 
-La aplicación mobile se encuentra desarollada con **Expo** y es accedida a través de un APK. Actualmente no se encuentra disponible en la store de Google. 
+La aplicación mobile se encuentra desarrollada con **Expo** y es accedida a través de un APK. Actualmente no se encuentra disponible en la store de Google. 
 
-> Es importante aclarar que fue desarollada con soporte solamente para Android.
+> Es importante aclarar que fue desarrollada con soporte solamente para Android.
 
 ## Aplicación Backoffice web
 
-La aplicación backoffice web se encuentra desarollada con **Next.js**. Actualmente se encuentra desplegada en **Vercel** con el siguiente enlace: [https://melody-backoffice-web.vercel.app](https://melody-backoffice-web.vercel.app)
+La aplicación backoffice web se encuentra desarrollada con **Next.js**. Actualmente se encuentra desplegada en **Vercel** con el siguiente enlace: [https://melody-backoffice-web.vercel.app](https://melody-backoffice-web.vercel.app)
 

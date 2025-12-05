@@ -49,7 +49,9 @@ Se utiliza JWT para la autenticación de usuarios, con tokens firmados usando cr
 > [!IMPORTANT]
 > El token de acceso se transmite a través del header personalizado `x-access-token` en lugar del estándar `Authorization: Bearer`.
 
-**Justificación**: El [[Arquitectura#API Gateway|Zuplo API Gateway]] utiliza el header `Authorization: Bearer` para su propia autenticación a nivel de gateway. Si el UserService también utilizara este mismo header para autenticar a los usuarios finales, existiría un conflicto donde ambos sistemas intentarían interpretar el mismo header, causando que uno "pise" al otro. Por esta razón, se decidió usar `x-access-token` para la autenticación de usuarios, permitiendo que ambos sistemas coexistan sin interferencias.
+**Justificación**: En el [[Arquitectura#API Gateway|Zuplo API Gateway]] se utiliza el header `Authorization: Bearer` para la autenticación con GCP a nivel de gateway y servicios. Sin embargo, esto al final no se terminó protegiendo en el gateway para mantener que solamente se puedan acceder a los servicios desde el gateway y no desde otros lugares por motivos de tiempo y complejidad durante el desarrollo.
+
+Si el UserService también utilizara este mismo header para autenticar a los usuarios finales, existiría un conflicto donde ambos sistemas intentarían interpretar el mismo header, causando que uno "pise" al otro. Por esta razón, se decidió usar `x-access-token` para la autenticación de usuarios, permitiendo que ambos sistemas coexistan sin interferencias.
 
 ### Criptografía Asimétrica
 

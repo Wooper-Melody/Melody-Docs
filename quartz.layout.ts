@@ -1,5 +1,51 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
+import { Options } from "./quartz/components/Explorer"
+import { FileTrieNode } from "./quartz/util/fileTrie"
+
+// Función de ordenamiento personalizada para el explorador
+// Define el orden de las carpetas principales (ajusta según tus necesidades)
+const customSortFn: Options["sortFn"] = (a, b) => {
+  // Orden personalizado para carpetas principales (ajusta estos nombres según tus carpetas)
+  const folderOrder = [
+    "Arquitectura",
+    "Servicios",
+    "Frontend",
+    "Gestión",
+    "Aprendizaje y Mejoras",
+  ]
+
+  // Mantener carpetas primero, luego archivos
+  if (!a.isFolder && b.isFolder) {
+    return 1
+  }
+  if (a.isFolder && !b.isFolder) {
+    return -1
+  }
+
+  // Si ambos son carpetas o ambos son archivos
+  const aIndex = folderOrder.indexOf(a.displayName)
+  const bIndex = folderOrder.indexOf(b.displayName)
+
+  // Si ambos están en la lista de orden personalizado
+  if (aIndex !== -1 && bIndex !== -1) {
+    return aIndex - bIndex
+  }
+
+  // Si solo uno está en la lista, ponerlo primero
+  if (aIndex !== -1) {
+    return -1
+  }
+  if (bIndex !== -1) {
+    return 1
+  }
+
+  // Si ninguno está en la lista, ordenar alfabéticamente
+  return a.displayName.localeCompare(b.displayName, undefined, {
+    numeric: true,
+    sensitivity: "base",
+  })
+}
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
@@ -38,7 +84,9 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      sortFn: customSortFn,
+    }),
   ],
   right: [
     Component.Graph(),
@@ -62,7 +110,9 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      sortFn: customSortFn,
+    }),
   ],
   right: [],
 }

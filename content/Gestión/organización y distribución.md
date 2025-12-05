@@ -4,6 +4,8 @@ title: Organización y Distribución
 
 Este documento describe cómo se organizó el equipo a lo largo del proyecto, la distribución de tareas, roles y responsabilidades de cada miembro, y las metodologías de trabajo utilizadas.
 
+> Para ver las lecciones aprendidas derivadas de esta experiencia organizacional, ver [[Lecciones Aprendidas#gestión-y-organización|Lecciones Aprendidas - Gestión y Organización]].
+
 ## Composición del Equipo
 
 El equipo estaba compuesto por 5 desarrolladores con diferentes roles y especialidades que fueron evolucionando a lo largo del proyecto.
@@ -89,9 +91,9 @@ A partir del checkpoint 3, se establecieron **dailies asíncronas** en Discord. 
 **Evolución**: Se redujo a 2-3 desarrolladores enfocados en backend, con los demás migrando a roles mixtos o frontend
 
 **Servicios distribuidos**:
-- **Servicio de Usuarios**: Santiago, Cristhian, Theo y Juan Martín
-- **Servicio de Catálogo**: Theo, Cristhian, Santiago y Juan Martín
-- **Servicio de Notificaciones**: Cristhian
+- **[[Servicio de usuarios|Servicio de Usuarios]]**: Santiago, Cristhian, Theo y Juan Martín
+- **[Servicio de Catálogo](Servicios/Catalogo/summary.md)**: Theo, Cristhian, Santiago y Juan Martín
+- **[[Servicio de notificaciones|Servicio de Notificaciones]]**: Cristhian
 
 ### Frontend
 

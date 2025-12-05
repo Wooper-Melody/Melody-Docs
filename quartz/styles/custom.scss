@@ -30,3 +30,36 @@ blockquote {
     }
   }
 }
+
+// Estilos personalizados para enlaces internos - hacerlos más visibles
+a.internal {
+  color: #7c5fb8 !important; // Violeta más suave y visible
+  background-color: transparent !important; // Sin fondo
+  padding: 0 0.1rem !important;
+  border-radius: 3px !important;
+  font-weight: 600 !important;
+  transition: color 0.2s ease !important;
+  text-decoration: none !important;
+  
+  &:hover {
+    color: #6d4fa0 !important; // Violeta un poco más oscuro al hover
+  }
+  
+  // Mantener el estilo para enlaces rotos
+  &.broken {
+    color: #999 !important;
+    text-decoration-color: rgba(153, 153, 153, 0.3) !important;
+    opacity: 0.6;
+    
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  
+  // No aplicar estilos a enlaces con imágenes
+  &:has(> img) {
+    background-color: transparent !important;
+    padding: 0 !important;
+    text-decoration: none !important;
+  }
+}

@@ -2,7 +2,7 @@
 title: Colecciones y Playlists
 ---
 
-Los dominios de colecciones y playlists son dos dominios diferentes, pero que en varias partes se intentan manejar de manera conjunta. Esto fue un punto complicado de diseño, ya que aunque son parecidos, tienen características y responsabilidades diferentes.
+Los dominios de colecciones y playlists son dos dominios diferentes, pero en varias partes se intentan manejar de manera conjunta. Esto fue un punto complicado de diseño, ya que aunque son parecidos, tienen características y responsabilidades diferentes.
 
 ## Colecciones
 
@@ -61,7 +61,7 @@ Las playlists tienen un **banner** que se utiliza como imagen representativa de 
 
 ## Guardados - UserSaves
 
-Los _listeners_ pueden guardar playlists y colecciones. Esta es una de las funcionalidades que se manejan de manera conjunta con las colecciones y playlists, pero que internamente se manejan de manera diferente. Para esto se tiene el servicio de `UserSaveService` que se encarga de gestionar los guardados de los usuarios.
+Los _listeners_ pueden guardar playlists y colecciones. Esta es una de las funcionalidades que se manejan de manera conjunta con las colecciones y playlists, aunque internamente se manejan de manera diferente. Para esto se tiene el servicio de `UserSaveService` que se encarga de gestionar los guardados de los usuarios.
 
 ### Diseño de Guardados
 

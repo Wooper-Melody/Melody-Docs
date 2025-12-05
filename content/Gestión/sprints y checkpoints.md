@@ -4,6 +4,8 @@ title: Sprints y Checkpoints
 
 La organización del proyecto se inspiró en metodologías de desarrollo ágiles, particularmente Scrum. Se intentaron realizar sprints semanales para cumplir con los deadlines de las historias de usuario. Sin embargo, debido a la naturaleza de las historias de usuario, fue necesario implementarlas de forma incremental, ya que estaban estrechamente vinculadas entre sí, especialmente en el caso del catálogo.
 
+> Para ver las lecciones aprendidas derivadas de esta experiencia, ver [[Lecciones Aprendidas#gestión-y-organización|Lecciones Aprendidas - Gestión y Organización]].
+
 ## Checkpoints
 
 Se realizaron **4 checkpoints** durante el cuatrimestre para evaluar el progreso del proyecto y realizar ajustes cuando fue necesario. Los checkpoints fueron puntos de control del proyecto para evaluar el progreso y realizar ajustes acompañados por nuestros profesores **_Iara Jolodovsky_** e **_Ignacio Carol Lugones_**.
@@ -16,7 +18,7 @@ El principal porcentaje del desarrollo se realizó entre el checkpoint 2 y el ch
 
 **Duración**: Aproximadamente 3-4 semanas
 
-**Objetivo**: El "scaffolding" del proyecto, es decir, la creación de la infraestructura del proyecto incluyendo los deploys y configuraciones de mínimo un servicio (el de usuarios), con toda la pipeline de CI/CD y el despliegue de la aplicación.
+**Objetivo**: El "scaffolding" del proyecto, es decir, la creación de la infraestructura del proyecto incluyendo los deploys y configuraciones de mínimo un servicio (el [[Servicio de usuarios|servicio de usuarios]]), con toda la pipeline de CI/CD y el despliegue de la aplicación.
 
 #### Hitos Técnicos
 
@@ -51,7 +53,7 @@ No se pudieron implementar todas las funcionalidades planificadas:
 
 **Duración**: Aproximadamente 3-4 semanas
 
-**Objetivo**: Implementar todo lo posible del servicio de catálogo: colecciones, canciones, playlists y, si era posible, reproducción.
+**Objetivo**: Implementar todo lo posible del [servicio de catálogo](Servicios/Catalogo/summary.md): colecciones, canciones, playlists y, si era posible, reproducción.
 
 #### Hitos Técnicos
 
@@ -65,14 +67,9 @@ No se pudieron implementar todas las funcionalidades planificadas:
 - Gestión de canciones
 - Gestión de playlists
 - Lógica de regiones y disponibilidad
+- Búsqueda unificada por tipo
 - Publicación de colecciones
-
-**Backend - Backoffice**:
-- Perfil detallado (admin)
-- Disponibilidad por región/ventana
-- Bloqueo/desbloqueo con alcance
-- Listar usuarios del sistema
-- Bloquear/Desbloquear usuario
+- Backoffice: Perfil detallado (admin), disponibilidad por región/ventana, bloqueo/desbloqueo con alcance, listar usuarios del sistema, bloquear/desbloquear usuario
 
 **Frontend**:
 - Perfil del artista (parcial)
@@ -88,10 +85,8 @@ No se pudieron implementar todas las funcionalidades planificadas:
 - Liked Songs (parcial)
 - Colecciones guardadas (parcial)
 - Reproducción y controles básicos (parcial)
-- Controles avanzados del player (parcial)
-- Gestión de cola (parcial)
 
-> **Nota**: Muchas de estas funcionalidades se trataron de implementar pero no se completaron completamente. Se trabajó principalmente en lo core de la aplicación de canciones, colecciones y playlists. Casi estaba terminado pero algunas cosas nos bloqueban de decir esto ya esta terminado. 
+> **Nota**: Muchas de estas funcionalidades se trataron de implementar pero no se completaron en su totalidad. Se trabajó principalmente en lo core de la aplicación de canciones, colecciones y playlists. Casi estaba terminado, pero algunas cosas nos bloqueaban de poder decir que esto ya está terminado. 
 
 #### Problemas Encontrados
 
@@ -187,9 +182,9 @@ Con el equipo ya organizado, se mantuvo el mismo ritmo de trabajo las primeras d
 
 ### Evolución de Servicios por Checkpoint
 
-- **Checkpoint 1**: User Service + parte del backoffice + Zuplo en ejecución
-- **Checkpoint 2**: Catalog Service implementado
-- **Checkpoint 3**: Notification Service implementado + métricas en el catálogo
+- **Checkpoint 1**: Servicio de Usuarios + parte del backoffice + Zuplo en ejecución
+- **Checkpoint 2**: Servicio de Catálogo implementado
+- **Checkpoint 3**: Servicio de Notificaciones implementado + métricas en el catálogo
 - **Checkpoint 4**: Todos los servicios completos y funcionalidades finales
 
 ### Gestión de Historias de Usuario
