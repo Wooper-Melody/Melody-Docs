@@ -14,7 +14,7 @@ En el diagrama se puede observar la arquitectura general del proyecto. Se pueden
 El sistema está compuesto por tres microservicios principales:
 
 - <u>**[[Servicio de usuarios|Usuarios]]**</u>: Gestiona la autenticación y perfiles de los usuarios. Implementado en Java con Spring Boot, utiliza PostgreSQL como base de datos.
-- <u>**Catalogo**</u>: Gestiona el catálogo de contenido incluyendo las métricas del mismo. Implementado en Java con Spring Boot, utiliza PostgreSQL para el catálogo y MongoDB para las métricas.
+- <u>**[Catalogo](Servicios/Catalogo/summary.md)**</u>: Gestiona el catálogo de contenido incluyendo las métricas del mismo. Implementado en Java con Spring Boot, utiliza PostgreSQL para el catálogo y MongoDB para las métricas.
 - <u>**[[Servicio de notificaciones|Notificaciones]]**</u>: Gestiona las notificaciones de los usuarios desarrollado en Python con FastAPI. Utiliza MongoDB como base de datos.
 
 Cada microservicio tiene sus propias bases de datos y APIs. De esta manera cada uno tiene la responsabilidad de gestionar su propio contenido y funcionalidad. 

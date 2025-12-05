@@ -89,6 +89,12 @@ La implementación de una arquitectura de dos niveles en el [[Servicios/Catalogo
 
 ## Desarrollo y Mantenibilidad
 
+### Uso de Inteligencia Artificial
+
+Para llevar adelante el proyecto se utilizó bastante IA para generar código, documentación, etc. Esto fue muy útil para agilizar el desarrollo y reducir el tiempo de desarrollo. Sin embargo, se perdió mucho tiempo en corregir errores de IA y en entender el código generado en algunos casos puntuales. Por ejemplo, en el frontend se utilizó mucho IA para generar componentes lo que se desencadeno en problemas de performance. Por otro lado en el backend en catalogo se utilizó IA para generar entidades y repositorios lo que genero confusión en el modelado en algunos casos puntuales. 
+
+**Leccion**: Importante saber en que areas destaca la IA como tests unitarios, simples queries, parseos, validaciones y no tanto como modelado o diseño, cosas que reiquieren mas contexto y conocimiento. 
+
 ### Velocidad vs. Calidad
 
 Durante el desarrollo rápido del proyecto, se crearon muchos componentes con funcionalidad similar en el frontend. Aunque se intentó minimizar esta duplicación, aún persisten componentes repetidos. Esto hizo que al final del proyecto se perdiese bastante tiempo en refactorizar y eliminar inconsistencias entre componentes. 

@@ -14,7 +14,7 @@ El servicio de usuarios es el microservicio encargado de la gestión de usuarios
 
 ## Arquitectura
 
-El servicio de usuarios implementa una [[Arquitectura|arquitectura]] de capas tradicional con Spring Boot, donde la autenticación se maneja mediante JWT con criptografía asimétrica (RSA). El sistema utiliza `access tokens` y `refresh tokens` para la autenticación de usuarios.
+El servicio de usuarios implementa una [Arquitectura](Servicios/Overview.md#arquitectura) de capas tradicional con Spring Boot, donde la autenticación se maneja mediante JWT con criptografía asimétrica (RSA). El sistema utiliza `access tokens` y `refresh tokens` para la autenticación de usuarios.
 
 
 ![Arquitectura del User Service](Servicios/assets/user-service-arq.png)

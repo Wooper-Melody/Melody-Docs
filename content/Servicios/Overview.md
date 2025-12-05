@@ -137,3 +137,12 @@ Por otro lado, para el [[Servicio de notificaciones]] se eligió **Python con Fa
 
 5. **Diversidad tecnológica**: Utilizar diferentes lenguajes permite aprovechar las fortalezas de cada uno según el caso de uso, y también proporciona flexibilidad al equipo para elegir la mejor herramienta para cada tarea. 
 
+
+## Documentación de APIs
+
+Al utilizar FastAPI y SwaggerUI con spring boot, pudimos generar la documentación de manera sencilla y efectiva. Se tiene entonces un swagger por cada servicio. 
+
+Como se menciono en [Api-Gateway](Arquitectura/API-Gateway.md#documentación), se tiene un portal de desarrollador en el que se puede acceder a la documentación de los servicios que utilizan estos swaggers de los diferentes servicios. 
+
+> Notar que los swaggers existen también en cada servicio y estan disponibles. Por ejemplo [Swagger-Users-Service](https://userservice-633410389016.southamerica-east1.run.app/swagger-ui/index.html#)
+

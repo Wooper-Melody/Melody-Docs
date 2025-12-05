@@ -13,6 +13,7 @@ Melody es una plataforma de streaming musical diseñada para simplificar el desc
 - [[Arquitectura|Arquitectura General]]
 - [[Vista General|Vista General del Sistema]]
 - [[Infraestructura|Infraestructura y Despliegue]]
+- [[API Gateway|API Gateway]]
 
 ### Microservicios
 - [[Servicio de usuarios|Servicio de Usuarios]]
