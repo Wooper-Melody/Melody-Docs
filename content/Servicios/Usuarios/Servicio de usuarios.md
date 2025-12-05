@@ -68,7 +68,7 @@ El servicio soporta autenticación mediante Google OAuth, permitiendo a los usua
 
 ## Sistema de Follow/Unfollow
 
-Los usuarios pueden seguir a artistas dentro de la plataforma. El sistema mantiene:
+Los usuarios pueden seguir tanto a artistas como a oyentes dentro de la plataforma. El sistema mantiene:
 
 *   Relaciones bidireccionales entre usuarios (follower/following).
 *   Contadores automáticos de seguidores y seguidos.
