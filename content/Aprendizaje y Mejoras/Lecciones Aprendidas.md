@@ -38,7 +38,7 @@ El desbalance inicial entre backend y frontend (4 desarrolladores vs 1) generó 
 
 Fue muy difícil cerrar las historias de usuario debido a las muchas dependencias entre ellas. Algunas historias tardaron dos checkpoints enteros hasta tener funcionalidades completas. El equipo intentó usar Linear para gestionar las historias más importantes, pero resultó más útil utilizar un Excel compartido con los profesores. Para más detalles sobre la gestión de historias y los checkpoints, ver [[sprints y checkpoints|Sprints y Checkpoints]].
 
-**Lección**: Las herramientas simples pueden ser más efectivas que las sofisticadas, especialmente cuando hay stakeholders externos involucrados. Un Excel compartido puede ser más práctico que herramientas más complejas como Linear cuando se necesita colaboración directa y seguimiento simple. Además, es importante identificar y gestionar las dependencias entre historias desde el inicio para evitar que se acumulen.
+**Lección**: Las herramientas simples pueden ser más efectivas que las sofisticadas. Un Excel compartido puede ser más práctico que herramientas más complejas como Linear cuando se necesita colaboración directa y seguimiento simple. Es importante identificar y gestionar las dependencias entre historias desde el inicio para evitar que se acumulen.
 
 ### Desarrollo Iterativo y Reorganización
 

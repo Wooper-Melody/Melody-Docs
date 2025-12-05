@@ -30,6 +30,8 @@ El **API Gateway** actúa como el único punto de entrada para todas las peticio
 
 Esta arquitectura centraliza la seguridad y simplifica la gestión de las peticiones, evitando que el frontend necesite conocer la ubicación o los detalles internos de cada microservicio.
 
+> Para más detalles sobre el API Gateway, ver [API Gateway](API-Gateway#funcionalidades).
+
 ## Comunicación entre Componentes
 
 ### Frontend → Backend

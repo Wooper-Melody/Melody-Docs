@@ -46,7 +46,7 @@ El API Gateway está alojado y gestionado por **Zuplo**. Zuplo es una plataforma
 - Políticas de rate limiting y seguridad
 - Plugins especializados para el manejo de autenticación y autorización
 
-> Más detalles en su sección. 
+> Para más detalles sobre el API Gateway, ver [API Gateway](API-Gateway#funcionalidades).
 
 ## Frontend
 
